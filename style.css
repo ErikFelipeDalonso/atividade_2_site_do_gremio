@@ -111,3 +111,24 @@ body {
 .link:hover {
     text-decoration: underline;
 }
+
+.fixed-help{
+   position: fixed;
+   top: 16px;
+   right: 16px;
+   width: 46px;
+   height: 46px;
+   text-decoration: none;
+   border-radius: 12px;
+    background: #facc15;
+    color: #0b0f1a;
+    font-weight: 900;
+     line-height: 40px;
+     
+    text-align: center;
+    border: 2px solid #0b0f1a;
+    
+
+}
+.fixed-help:hover{
+    background-color: #cbd5e1;}
