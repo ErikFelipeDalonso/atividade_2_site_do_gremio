@@ -10,6 +10,9 @@ body {
     width: 62px;
 }
 
+
+
+
 #links {
     display: flex;
     gap: 25px;
@@ -17,23 +20,39 @@ body {
     align-items: center;
     font-style: none;
     list-style: none;
-  
-
 }
-.linha{
-    width: 2px;
-    height: 70px;
-    background-color: black;
-    margin-left: 1000px;
+
+#links a{
+        font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+font-size: large;
+}
+
+
+
+#link1:hover{
+   scale: 1.2;
+}
+#link2:hover{
+   scale: 1.2;
+}
+#link3:hover{
+   scale: 1.2;
 }
 
 #furia{
+    position: absolute;
+    left: 50%;
     width: 170px;
+     transform: translateX(-50%);
 }
 
 #navbar {
     display: flex;
     width: 100%;
+    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
@@ -42,7 +61,28 @@ body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 2;
 }
+
+.background-blur{
+position: absolute;
+   z-index: -1;
+    background-image:url('equpe-furia.jpg');
+    margin: 0;
+   width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter:blur(20px)
+}
+
+p {
+    margin-top: 5px;
+  line-height: 10px;
+}
+
+
 
 .noticias {
     display: flex;
@@ -51,58 +91,94 @@ body {
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgb(1, 36, 189);
     padding: 30px;
-   
     border-radius: 40px;
 
 }
 
 .noticia {
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(255, 255, 255);
-    background-color: rgb(236, 157, 38);
+    background-color: rgb(0, 0, 0);
     border: 4px solid rgb(255, 255, 255);
 }
 
+.noticia:hover{
+    transform: scale(1.03);
+}
 .img_noticia {
     width: 300px;
     height: 200px;
 }
 
 footer {
-    background-color: rgb(235, 141, 0);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 
 .posicao {
+    display: flex;
+    flex-wrap: wrap;
     margin: 40px;
     padding: 20px;
     border-radius: 40px;
-    background-color: rgb(1, 36, 189);
+    background: linear-gradient(30deg,#7c7c7c, #ffffff);
+    text-align: center;
+    color: white
+}
+.posicao2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1500px;
+    align-items: center;
+    margin: 40px auto;   
+    padding: 20px;
+    border-radius: 40px;
+    background: linear-gradient(30deg,#7c7c7c, #ffffff);
+    text-align: center;
+    color: white;
+}
+
+.posicaoBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 40px;
+    background: linear-gradient(30deg,#7c7c7c, #ffffff);
     text-align: center;
     color: white
 }
 
 .pos-box {
-    width: 420px;
+    width: 300px;
     margin: 20px auto;
     padding: 15px;
     border: 4px solid whitesmoke;
-    background-color:rgb(243, 209, 55);
+    background-color:rgb(0, 0, 0);
     color: white;
 
 }
 
-.pos-static {
-    position: static;
-    top: 40px;
-    left: 30px;
+.video-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 640px;
+    margin: 20px auto;
+}
+.aba{
+background-color: rgb(0,0,0);
+width: 100%;
+border-radius:0 0 10px 10px;
+text-align: center;
+
 }
 
 .pos-relative {
@@ -114,8 +190,8 @@ color: rgb(7, 49, 98);
 }
 
 .pai {
-width: 840px;
-height: 300px;
+width: 1080px;
+height: 800px;
 margin: 20px auto;
 padding: 20px;
 border-radius: 20px;
@@ -124,7 +200,10 @@ background-color: rgb(72,155,243);
 position: relative;
 color: white;
 font-weight: bold;
+
 }
+
+
 
 .filho {
  position: absolute;
@@ -135,20 +214,54 @@ font-weight: bold;
  color: rgb(7. 49. 98);
  border: 3px solid rgb(7, 49, 98);
  border-radius: 20px;
+ display: flex;
 }
 
-.Escalação{
-    position:relative;
-    
-    margin: 20px auto;
-    border-radius: 20px;
-    border: 4px solid white;
-    width: 160px;
-    height: 160px;
+.BordaTime {
+    margin-top: 15px;
+    margin-left: 65px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 25px;
+}
+.Time{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 150px;
+ 
+}
+
+.MolodoyIMG{
+position: absolute;
+    left: 1025px;
+    bottom: -1300px;
+}
+
+.KSCERATOIMG{
+position: absolute;
+   left: 350px;
+    bottom: -1300px;
+}
+
+.KSCERATOIMGinv{
+visibility: hidden;
+}
 
 
+.Escalação {
+width:400px;
+height: 450px;
+ border-radius: 20px;
+ object-fit: cover;
 }
 
 .logo_furia{
-    width: 62px;
+  width: 62px;
+  height: auto;
+  display: block;
+  align-items: center;
+    margin: 0 auto;
 }
